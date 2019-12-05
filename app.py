@@ -9,7 +9,7 @@ CORS(app)
 def hello():
     return "Hello World!"
 
-@app.route('/gerar-pdf', methods=['POST'])
+@app.route('/gerar-guia', methods=['POST'])
 def gerar_pdf():
     nome = request.form['nome']
     num_doc = request.form['num_doc']
